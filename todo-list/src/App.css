@@ -1,0 +1,166 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(190, 202, 198);
+  min-height: 78vh;
+  margin: 10px auto;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 800px; /* Prevents it from being too wide */
+  padding: 20px;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.create {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create input {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 400px;
+  color: black;
+  margin: 10px 0;
+  border: 1px solid #333;
+}
+
+.create button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  margin: 10px 0;
+  font-weight: bolder;
+  background-color: rgb(121, 121, 221);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.create button:hover {
+  background-color: rgb(91, 91, 201);
+}
+
+.todos {
+  padding-left: 5vw;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  flex: 1;
+  background-color: #e6dfdf;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  font-weight: 500;
+  border: 1px solid rgb(0, 0, 0);
+  word-break: break-word;
+}
+
+.button {
+  display: flex;
+  gap: 5px;
+}
+
+.button button {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button button:hover {
+  opacity: 0.8;
+}
+
+.button :nth-child(1) {
+  background-color: rgb(236, 186, 76);
+  color: white;
+  font-weight: bold;
+}
+
+.button :nth-child(2) {
+  background-color: rgb(233, 60, 60);
+  font-weight: bolder;
+  color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .create input {
+    width: 90%;
+  }
+
+  .todo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .create input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .create button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .button button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

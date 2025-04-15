@@ -1,0 +1,30 @@
+.nav{
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+    background-color: wheat;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    gap: 30px;
+}
+.logo span{
+    font-size: larger;
+    padding: 10px;
+    font-weight: bold;
+}
+.list ul{
+    display: flex;
+    padding: 10px;
+    gap: 50px;
+    list-style: none;
+}
+.list ul li{
+    font-weight: bold;
+}
+.list ul li:hover{
+    font-weight: 700;
+    color: blue;
+    /* text-decoration: underline; */
+}
